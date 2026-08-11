@@ -625,17 +625,7 @@ nav .sidebar .lang_change select {
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.089);
 }
 
-/* Statistics */
 
-.statistics {
-    margin-bottom: 72px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("/images/background/bg.png");
-    padding: 20px;
-    padding-block: 60px;
-    height: auto;
-}
 
 .statistics_content {
     display: flex;
@@ -668,7 +658,6 @@ nav .sidebar .lang_change select {
 }
 
 .statistics_content span h2::after {
-    content: " ";
     position: absolute;
     display: flex;
     align-items: center;
@@ -687,7 +676,6 @@ nav .sidebar .lang_change select {
     font-size: 24px;
 }
 
-/* Map */
 
 .map {
     display: flex;
