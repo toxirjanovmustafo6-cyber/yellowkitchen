@@ -605,6 +605,8 @@ nav .sidebar .lang_change select {
     color: #313030;
 }
 
+
+
 .swiper-2-button-next {
     position: absolute !important;
     right: 0 !important;
@@ -625,8 +627,6 @@ nav .sidebar .lang_change select {
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.089);
 }
 
-
-
 .statistics_content {
     display: flex;
     justify-content: center;
@@ -634,14 +634,31 @@ nav .sidebar .lang_change select {
     flex-wrap: wrap;
     height: auto;
     gap: 40px;
+    margin-top: 10px;
+
 }
 
 .statistics_content span {
-    display: inherit;
-    align-items: center;
+    position: relative;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
+
+.statistics_content span::after {
+    content: "";
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    top: -20px;
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--gray_dark);
+    border-radius: 50%;
+    border: 1px solid #B79C10;
+}
+
 
 .statistics_content span h2 {
     display: flex;
@@ -657,17 +674,6 @@ nav .sidebar .lang_change select {
     background-color: var(--brand);
 }
 
-.statistics_content span h2::after {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 22px;
-    width: 106px;
-    height: 106px;
-    border-radius: 50%;
-    border: 1px solid var(--yellow_dark);
-}
 
 .statistics_content span p {
     color: var(--gray_dark);
@@ -676,14 +682,13 @@ nav .sidebar .lang_change select {
     font-size: 24px;
 }
 
-
 .map {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.map .container img {
+.map .container iframe {
     width: 100%;
 }
 
