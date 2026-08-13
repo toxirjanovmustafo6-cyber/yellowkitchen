@@ -1,6 +1,10 @@
 function toggleSidebar() {
-    const sideMenu = document.querySelector(".sidebar");
-    sideMenu.classList.toggle("active");
+    const sidebar = document.querySelector(".sidebar");
+    const overlay = document.querySelector(".sidebar_overlay");
+
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+    document.body.classList.toggle("no_scroll");
 }
 
 const cartBtn = document.querySelector(".cart_btn");
